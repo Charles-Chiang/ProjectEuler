@@ -12,14 +12,14 @@ int method() {
     int sum = 0;
     int prev = 1;
     int curr = 2;
-    for (int next = 3; next < 4000000; next = curr+prev) {
+    for (int next = 3; next < 4000000; next = curr + prev) {
         if (next%2 == 0) {
             sum += next;
         }
         prev = curr;
         curr = next;
     }
-    return sum+2;
+    return sum + 2;
 }
 
 int main() {
