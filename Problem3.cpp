@@ -9,8 +9,8 @@
 
 /* ---------------------REDUNDANT (but it works)-------------------
 bool checkprime(int num) {
-    long int root = std::sqrt(num);
-    if (isdigit(std::sqrt(num)) == true) {
+    int root = sqrt(num);
+    if (root*root == num) {
         return false;
     }
 
